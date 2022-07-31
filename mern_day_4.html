@@ -1,0 +1,56 @@
+<script>
+
+/*
+
+function lw(){ 
+//want js to go to div 1 
+x= document.getElementById("d1"); //used to get address of element 
+alert(x); 
+//want to go to inner content of division or on data directly on html page use innnerHTML 
+y= x.innerHTML
+alert(y) 
+//retrieve content and display in 1st input box and  to use doc prop on input box use value 
+z= document.getElementById("d3");
+z.value=x.innerHTML
+//lets retreive data of input box 3 and put in div1 i.e directly on html page  
+a= document.getElementById("d5");
+x.innerHTML=a.value
+//we have capablity to display anything live that we have written in input box in html : static code 
+
+//but now without reloading the code we will update the code live with javascript  ...i.e my client can directly update 
+
+//javascript events ....onkeydown (when user will press key it will occur)
+
+//we can use onmouseover too...in button ...the function will get triggered only when u bring mouse over the button 
+
+<button onmouseover =lw() > clcik </button>
+
+//this is how u can create live html interpreter(to practice html or css codeor js code )  ..
+
+// use marque keyword in code , text area too to enter code  : u can adjust its size 
+
+// you can create a form as an example 
+}
+
+*/
+
+function lw(){
+
+x= document.getElementById("d1");
+a= document.getElementById("d5");
+x.innerHTML=a.value
+
+}
+</script> 
+<body>
+<div id="d1">First div </div>
+<p id="d2" > I am para </p>
+<input id="d3" / > <br / >
+<input id="d4" / > <br / >
+<input id="d51" onkeydown=lw()  / > <br / >
+<input id="d5" onkeyup=lw()  / > <br / >
+<br />
+
+<button onclick=lw() > clcik </button>
+
+</body>
