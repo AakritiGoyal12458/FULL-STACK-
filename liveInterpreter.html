@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script>
+
+		function lw(){
+		x=document.getElementById("d1");
+		y=x.innerHTML;
+		z=document.getElementById("d5");
+		//alert(z)
+		//alert(z.value)
+		//z.value=y
+		//y=z.value(not working)
+		x.innerHTML=z.value;
+		}
+
+		function box(){
+		x=document.getElementById("d2");
+		y=x.innerHTML;
+		z=document.getElementById("d4");
+		z.value=y
+		}
+		</script>
+	</head>
+	<body>
+		<div id="d1">first div</div>
+		<p id="d2">this is para</p>
+
+		<!-- box 1: <input id="d3" /><br /> 
+box3:<input id="d5" onkeyup="lw()" />
+
+--!>
+		enter ur code: <textarea id="d5" onkeyup="lw()"> Enter your code here : </textarea><br />
+		box 2 : <input  id="d4"/><br /><br />
+		
+		<button  onclick="lw()">click me </button><br />
+		<button  onmouseover="box()">click me for box2</button><br />
+	</body>
+</html>
